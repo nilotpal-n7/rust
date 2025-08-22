@@ -859,10 +859,7 @@ impl<'input> Parser<'input> {
                 0,
                 ParseError {
                     description: "expected alignment specifier after `:` in format string; example: `{{:>?}}`".to_owned(),
-                    note: Some(
-                        "alignment must be one of `<` (left), `^` (center), or `>` (right)"
-                            .to_string(),
-                    ),
+                    note: None,
                     label: format!("expected `{}` to occur after `:`", alignment),
                     span: range,
                     secondary_label: None,
