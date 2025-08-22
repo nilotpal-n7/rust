@@ -858,10 +858,7 @@ impl<'input> Parser<'input> {
             self.errors.insert(
                 0,
                 ParseError {
-                    description: format!(
-                        "expected `{}` (alignment specifier) after `:` in format string; example: `{{:>#X5}}`",
-                        alignment
-                    ),
+                    description: "expected alignment specifier after `:` in format string; example: `{{:>?}}`".to_owned(),
                     note: Some(
                         "alignment must be one of `<` (left), `^` (center), or `>` (right)"
                             .to_string(),
