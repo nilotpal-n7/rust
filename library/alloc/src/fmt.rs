@@ -354,7 +354,7 @@
 //! sign := '+' | '-'
 //! width := count
 //! precision := count | '*'
-//! type := '?' | 'x' | 'X' | 'x?' | 'X?' | 'o' | 'b' | 'e' | 'E' | 'p'
+//! type := '?' | 'x?' | 'X?' | 'o' | 'x' | 'X' | 'p' | 'b' | 'e' | 'E'
 //! count := parameter | integer
 //! parameter := argument '$'
 //! ```
